@@ -1,0 +1,16 @@
+Cài Docker Engine
+	1.Vào quyền root
+	2.Vào máy ảo lfit
+		- dnf update
+		- dnf upgrade
+		- dnf install dnf-plugins-core
+		- dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+		- dnf install docker-ce docker-ce-cli containerd.io
+		- systemctl start docker
+		- docker run hello-world
+		- dnf install docker-compose-plugin
+Cài Docker Desktop
+	1.Lấy file rpm
+		- wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.11.0-x86_64.rpm
+	2.Cài đặt
+		- dnf install docker-desktop-4.11.0-x86_64.rpm 
