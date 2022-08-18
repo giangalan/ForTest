@@ -8,9 +8,13 @@ Cài Docker Engine
 		- dnf install docker-ce docker-ce-cli containerd.io
 		- systemctl start docker
 		- docker run hello-world
-		- dnf install docker-compose-plugin
+		
 Cài Docker Desktop
+	1.
+		- dnf install docker-compose-plugin
 	1.Lấy file rpm
 		- wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.11.0-x86_64.rpm
+		- mv docker-desktop-4.11.0-x86_64.rpm /home/setup
 	2.Cài đặt
+		- cd /home/setup
 		- dnf install docker-desktop-4.11.0-x86_64.rpm 
